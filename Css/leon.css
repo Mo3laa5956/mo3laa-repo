@@ -21,9 +21,9 @@
 /* end component */
 /* start global rules */
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+   
 }
 body {
     font-family: 'Work Sans', sans-serif;
@@ -187,7 +187,7 @@ body {
     color: #777;
     font-size: 15px;
 }
-.fa-earth-europe:before, .fa-globe-europe:before {
+/* .fa-earth-europe:before, .fa-globe-europe:before { 
     position: absolute;
     right: 48%;
     top: 2%;
@@ -205,6 +205,7 @@ body {
     top: 2%;
     transform: scale(2.5);
 }
+*/
 /* End features */
 /* Start Services */
 .Services {
