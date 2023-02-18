@@ -1,6 +1,7 @@
 /* Start variables */
 :root {
     --main-color: #10cab7;
+    --secondary-color: #2c4755;
 }
 
 /* End variables */
@@ -259,8 +260,55 @@ body {
 .Services .services-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 30px;
     margin-top: 100px;
 }
-
+.Services .services-content .serv {
+    display: flex;
+    margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+    .Services .services-content .serv {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.Services .services-content .serv i {
+    color: var(--main-color);
+    flex-basis: 60px;
+}
+.Services .services-content .serv .text {
+    flex: 1;
+}
+.Services .services-content .serv h3 {
+    margin: 0 0 20px;
+}
+.Services .services-content .serv p {
+    color: #777;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.Services .services-content .image {
+    text-align: center;
+    position: relative;
+}
+.Services .services-content .image::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -53px;
+    width: 100px;
+    height: calc(100% + 100px);
+    background-color: var(--secondary-color);
+    z-index: -1;
+}
+.Services .services-content .image img {
+    width: 300px;
+    height: 400px;
+}
+@media (max-width: 1199px) {
+    .image-col {
+        display: none;
+    }
+}
 /* End Services */
