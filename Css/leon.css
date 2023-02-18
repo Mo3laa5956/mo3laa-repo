@@ -2,6 +2,7 @@
 :root {
     --main-color: #10cab7;
 }
+
 /* End variables */
 /* start component */
 .special-heading {
@@ -13,86 +14,114 @@
     margin: 0;
     opacity: 0.3;
 }
-.special-heading + p{
+
+.special-heading + p {
     margin-top: -32px;
     text-align: center;
     color: #777;
 }
+
 /* end component */
 /* start global rules */
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-   
+
 }
+
 body {
     font-family: 'Work Sans', sans-serif;
     text-transform: capitalize;
     background-color: #eee;
 }
+
 .container {
-    
+
     margin: 0 auto;
     padding: 0 15px;
 }
+
 /* Small */
 @media (min-width: 768px) {
     .container {
         width: 750px;
     }
 }
+
 /* Medium */
 @media (min-width: 992px) {
     .container {
         width: 970px;
-    } 
+    }
 }
+
 /* Large */
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
 }
+
 /* end global rules */
 /* Start header */
+@media (max-width:767px) {
+    .special-heading {
+        font-size: 60px;
+    }
+
+    .special-heading + p {
+        margin-top: -20px;
+    }
+}
+
 .header {
     padding: 20px;
 }
+
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .header .logo {
     width: 60px;
 }
+
 .header .links {
     position: relative;
 }
+
 .header .links .icon {
     width: 30px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
+
 .header .links .icon:hover span:nth-child(2) {
     width: 100%;
 }
+
 .header .links .icon span {
     height: 2px;
     background-color: #333;
     margin-bottom: 5px;
 }
+
 .header .links .icon span:first-child {
-     width: 100%;
+    width: 100%;
 }
+
 .header .links .icon span:nth-child(2) {
     width: 60%;
     transition: 0.3s;
 }
+
 .header .links .icon span:last-child {
     width: 100%;
 }
+
 .header .links ul {
     list-style: none;
     margin: 0;
@@ -105,6 +134,7 @@ body {
     z-index: 1;
     display: none;
 }
+
 .header .links ul::before {
     content: "";
     border: 10px solid;
@@ -113,9 +143,11 @@ body {
     right: 5px;
     top: -20px;
 }
+
 .header .links:hover ul {
     display: block;
 }
+
 .header .links ul li a {
     text-decoration: none;
     color: #333;
@@ -123,12 +155,15 @@ body {
     padding: 15px;
     transition: 0.3s;
 }
+
 .header .links ul li a:hover {
     padding-left: 25px;
 }
+
 .header .links ul li:not(:last-child) a {
     border-bottom: 1px solid #333;
 }
+
 /* End header */
 /* Start landing section */
 .landing {
@@ -137,6 +172,7 @@ body {
     height: calc(100vh - 64px);
     position: relative;
 }
+
 .landing .intro-text {
     position: absolute;
     left: 50%;
@@ -147,45 +183,54 @@ body {
     min-width: 100%;
 }
 
-.landing .intro-text h2{
+.landing .intro-text h2 {
     margin: 0;
     color: var(--main-color);
     font-weight: bold;
     font-size: 50px;
 }
-.landing .intro-text p{
+
+.landing .intro-text p {
     font-size: 19px;
     line-height: 1.8;
     font-weight: 500;
+    color: white;
 }
+
 /* End landing section */
 /* Start features */
 .features {
     padding: 60px 0;
     background-color: #f6f6f6;
 }
+
 .features .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
 }
+
 .features .container .feet {
     position: relative;
     padding: 20px;
     text-align: center;
 }
+
 .features .feet i {
     color: var(--main-color);
 }
+
 .features .feet h3 {
     font-weight: 800px;
     margin: 30px 0;
 }
+
 .features .feet p {
     line-height: 1.5;
     color: #777;
     font-size: 15px;
 }
+
 /* .fa-earth-europe:before, .fa-globe-europe:before { 
     position: absolute;
     right: 48%;
@@ -210,10 +255,12 @@ body {
 .Services {
     padding: 60px 0;
 }
+
 .Services .services-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
     margin-top: 100px;
 }
+
 /* End Services */
