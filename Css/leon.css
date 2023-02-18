@@ -64,7 +64,7 @@ body {
 
 /* end global rules */
 /* Start header */
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .special-heading {
         font-size: 60px;
     }
