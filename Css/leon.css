@@ -408,7 +408,7 @@ body {
     max-width: 100%;
 }
 .about .about-content .text {
-    flex-basis: calc(100% - 500px);
+    flex-basis: calc(100% - 550px);
 }
 .about .about-content .text p:first-of-type {
     font-weight: bold;
