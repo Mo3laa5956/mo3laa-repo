@@ -311,4 +311,7 @@ body {
         display: none;
     }
 }
+.col-image {
+    margin-top: 80px;
+}
 /* End Services */
