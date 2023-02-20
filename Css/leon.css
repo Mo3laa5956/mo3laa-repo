@@ -441,6 +441,7 @@ body {
     color: var(--secondary-color);
     letter-spacing: -2px;
     margin-bottom: 15px;
+ 
 }
 .contact .info .link {
     display: block;
@@ -448,6 +449,15 @@ body {
     font-weight: bold;
     color: var(--main-color);
     text-decoration: none;
+    cursor: default;
+}
+.contact .info .link span {
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    cursor: pointer;
+}
+.contact .info .link span:hover {
+    color: var(--secondary-color);
 }
 @media (max-width: 768px) {
     .contact .info .link {
@@ -465,6 +475,13 @@ body {
     color: var(--secondary-color);
     margin-left: 7px;
 }
+.contact .info .social i {
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+}
+.contact .info .social .links:hover i {
+    color: var(--main-color);
+}
 /* End contact */
 /* Start footer */
 .footer {
@@ -477,5 +494,10 @@ body {
 }
 .footer span {
     color: var(--main-color);
+}
+@media (max-width: 768px) {
+    .footer {
+        font-size: 13px;
+    }
 }
 /* End footer */
