@@ -374,13 +374,13 @@ body {
 }
 .about .about-content .image {
     position: relative;
-    width: 388px;
+    /* width: 388px; */
     height: 450px;
 }
 .about .about-content .image::before {
     content: '';
     position: absolute;
-    background: #c7cbcf;
+    background: var(--secondary-color);
     width: 100px;
     height: calc(100% + 80px);
     top: -40px;
