@@ -235,7 +235,45 @@ body {
     color: #777;
     font-size: 15px;
 }
-
+.up {
+    position: fixed;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    /* float: right; */
+    right: 63px;
+    bottom: 30px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+}
+.up a i {
+    padding: 8px 0px 0px 0;
+    color: var(--main-color);
+}
+@media (max-width: 768px) {
+    .up {
+        position: fixed;
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        /* float: right; */
+        right: 21px;
+        bottom: 16px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        opacity: 0.8;
+    }
+    .up a i {
+        padding: 0;
+        color: var(--main-color);
+        transform: scale(0.7);
+    }
+}
 /* .fa-earth-europe:before, .fa-globe-europe:before { 
     position: absolute;
     right: 48%;
